@@ -1,0 +1,67 @@
+<ion-content [fullscreen]="true">
+  
+  <!-- <div class="divPrincipal">
+    <ion-row>
+      <ion-col>
+        <ion-button shape="block" (click)="gerar()">GERAR IMAGEM</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <img src="{{imagem}}" width="200" height="200" />
+      </ion-col>
+    </ion-row>
+  </div> -->
+<div class=" container">
+  <ion-row>
+    <ion-col  style="text-align: center;">
+     <h2>Petshop Banho & Tosa</h2>
+    </ion-col>
+  </ion-row>
+  <img alt="logo" src="../../assets/logo.jpg" />
+</div>
+  <div class="espaco">
+    <ion-row style="margin-top: auto">
+      <ion-col id="coluna1">
+        <ion-item class="roundedInput" line ="none" >
+          <ion-label position="floating"> Nome do Pet:
+            <ion-input
+            type="text"
+            expand="block"
+            style="color: #222"     
+            [(ngModel)]="cadastrando.nome"     
+            >
+
+            </ion-input>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row style="margin-top: auto">
+      <ion-col id="coluna1">
+        <ion-item class="roundedInput" line ="none" >
+          <ion-label position="floating">
+           Idade:
+            <ion-input
+            type="text"
+            expand="block"
+            style="color: #222"
+            [(ngModel)]="cadastrando.idade"
+            >
+            </ion-input>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+ <ion-footer>
+  <ion-row>
+    <ion-col class="espaco">
+      <ion-button shape="block" color="success" (click)="cadastrar()">CADASTRAR
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-footer>  
+
+
